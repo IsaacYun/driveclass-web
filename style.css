@@ -20,3 +20,44 @@
  .row{gap:12px}
  .row .meta{font-size:14px}
 }
+/* Layout audit: preserve labels and controls at 320–1920 CSS pixels. */
+.brand,.nav-end,.arrival{flex-shrink:0}
+.brand strong,#diagnostics-open{white-space:nowrap}
+.tabs{overflow-y:hidden;scrollbar-width:thin}
+.episodes{scrollbar-width:thin}
+.segment span{overflow:hidden;text-overflow:ellipsis;min-width:0;display:block}
+.timeline .segment:last-child span{text-align:right}
+.controls,.transport,.columns>*{min-width:0}
+@media(max-width:600px){
+ header{height:auto;min-height:112px;flex-wrap:wrap;padding:14px 16px;row-gap:10px}
+ .brand{width:100%}
+ .brand strong{font-size:20px}
+ .nav-end{width:100%;margin-left:0;justify-content:flex-end}
+ #diagnostics-open{margin-right:auto;padding:8px 12px;font-size:14px}
+ .arrival{height:40px}
+ .picker{margin-top:8px}
+ .transport{display:grid;grid-template-columns:1fr 1fr 1.8fr 1fr 1fr;width:100%;gap:6px}
+ .transport .icon-button{width:100%;min-width:0;padding:8px;height:60px}
+ #play{min-width:0;width:100%;padding:10px;font-size:18px}
+ .controls{gap:14px 8px}
+ .controls>span:last-child{white-space:normal;line-height:1.4}
+ .segment span{font-size:11px}
+ .dialog-head h2{min-width:0;overflow-wrap:anywhere}
+ .dialog-head .close{flex-shrink:0}
+ #end-screen header{min-height:80px}
+ #end-screen header strong{font-size:18px}
+ #end-chip{font-size:15px;padding:12px;margin-left:auto}
+ #diagnostic-values{grid-template-columns:85px minmax(0,1fr);font-size:16px}
+ .actions button{white-space:normal;min-width:100px;line-height:1.4}
+}
+@media(max-width:380px){
+ .transport{grid-template-columns:repeat(4,minmax(0,1fr))}
+ #play{grid-column:1/-1;grid-row:1;height:56px}
+ .transport .icon-button{height:48px}
+ .now h1{font-size:25px}
+ .hero-icon{width:56px;height:56px}
+ .card{padding:20px}
+ .player{padding:22px 16px}
+}
+.segment input{min-width:0;max-width:100%}
+.timeline .segment:last-child{min-width:40px}
