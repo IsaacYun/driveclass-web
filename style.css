@@ -7,14 +7,7 @@
 .skip-icon text{fill:currentColor;stroke:none;font:700 13px Asta,sans-serif;text-anchor:middle}
 .row em{display:inline-block;white-space:nowrap}
 .row .detail{overflow-wrap:break-word;line-height:1.45}
-@media (min-width:601px) and (max-width:800px){
- .columns{grid-template-columns:1fr}
- .list-card{height:280px}
- .row{font-size:18px}
- .row em,.row .meta{font-size:15px}
- .list-card h2{font-size:21px}
- .small{font-size:15px}
-}
+
 @media (max-width:600px){
  .skip .skip-icon{width:32px;height:34px}
  .row{gap:12px}
@@ -69,3 +62,22 @@ dialog p,.row .detail{word-break:keep-all;overflow-wrap:anywhere}
 /* Keep the dismiss action reachable in long recap/diagnostic dialogs. */
 dialog .dialog-head{position:sticky;top:-32px;z-index:1;background:var(--background_popup);padding-top:12px;padding-bottom:12px;margin-top:-12px}
 @media(max-width:600px){dialog .dialog-head{top:-24px}}
+
+/* Navigation beside the vehicle browser must not force a one-column dashboard.
+   Stack cards only at phone widths; compact their contents at split-pane widths. */
+@media(min-width:481px) and (max-width:950px){
+ .columns,#end-screen .columns{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:12px}
+ .columns>.card{padding:18px 14px;border-radius:24px}
+ .list-card{height:300px}
+ .list-card h2{font-size:18px;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+ .list-card h2 img{width:40px;height:40px}
+ .list-card h2 .small{font-size:14px;padding:6px 8px;min-height:36px;margin-left:auto}
+ .columns .row{font-size:16px;padding:14px 4px;gap:8px;flex-wrap:wrap}
+ .columns .row .detail{flex:1;min-width:100px}
+ .columns .row .meta{font-size:14px;margin-left:auto}
+ .columns .row em{font-size:14px;margin-left:4px}
+ .columns .row small{font-size:14px}
+ .columns .empty{font-size:16px}
+ #end-screen .columns h2{font-size:20px}
+ #end-recap{font-size:16px;padding:12px}
+}
