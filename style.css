@@ -81,3 +81,80 @@ dialog .dialog-head{position:sticky;top:-32px;z-index:1;background:var(--backgro
  #end-screen .columns h2{font-size:20px}
  #end-recap{font-size:16px;padding:12px}
 }
+/* Vehicle dashboard: fit the browser viewport, including split navigation panes.
+   Only list contents scroll; the dashboard itself never needs page scrolling. */
+@media(min-width:481px){
+ html,body{height:100%;overflow:hidden}
+ #app{height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+ #app>header{height:clamp(56px,9vh,96px);min-height:0;flex:none;padding:0 clamp(16px,2.8vw,36px);flex-wrap:nowrap}
+ #app>header .brand{width:auto}
+ #app>header .nav-end{width:auto;margin-left:auto}
+ #app>header .brand strong{font-size:clamp(18px,2vw,26px)}
+ #app>header .brand>img{width:36px;height:36px}
+ #app>header .arrival{height:48px}
+ #app>header .arrival img{width:44px;height:44px}
+ #app>header .arrival strong{font-size:clamp(16px,1.8vw,25px)}
+ #app>main{width:100%;flex:1;min-height:0;display:grid;grid-template-rows:auto auto minmax(0,1fr);gap:clamp(10px,1.6vh,20px);padding:0 clamp(16px,2.8vw,36px) clamp(12px,2vh,24px)}
+ #app .picker{height:clamp(42px,6vh,60px);min-height:0;margin:0;flex-direction:row;gap:16px}
+ #app .tabs,#app .episodes{min-height:0}
+ #app .tabs button,#app .episodes button{padding:6px 14px;min-height:36px;font-size:clamp(14px,1.6vw,20px)}
+ #app .player{margin:0;padding:clamp(16px,2.7vh,30px);border-radius:clamp(24px,4vh,36px)}
+ #app .now{min-height:0;margin-bottom:clamp(10px,2vh,22px);gap:clamp(16px,2vw,34px)}
+ #app .hero-icon{width:clamp(56px,10vh,110px);height:clamp(56px,10vh,110px)}
+ #app .now h1{font-size:clamp(24px,4.5vh,42px)}
+ #app .timeline{height:44px;margin-bottom:12px}
+ #app .segment{gap:10px}
+ #app .segment span{font-size:clamp(11px,1.8vh,18px)}
+ #app .transport{gap:8px}
+ #app .transport .icon-button{height:clamp(48px,8vh,76px);width:clamp(48px,6vw,76px);padding:12px}
+ #app #play{height:clamp(48px,8vh,76px);min-width:120px;padding:12px 20px;font-size:clamp(18px,2.7vh,24px)}
+ #app .controls>span{font-size:clamp(14px,2.2vh,22px)}
+ #app .columns{min-height:0;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
+ #app .list-card{height:auto;min-height:0;overflow:hidden;padding:clamp(12px,2vh,24px)}
+ #app .list-card h2{flex:none;margin-bottom:8px;gap:8px;font-size:clamp(17px,2.7vh,25px)}
+ #app .list-card h2 img{width:clamp(32px,5vh,56px);height:clamp(32px,5vh,56px)}
+ #app .scroll-list{min-height:0;overflow:auto;overscroll-behavior:contain}
+ #app .browser-note{display:none}
+ #app #change-note{flex:none;margin:0 0 6px;font-size:14px;max-height:42px;overflow:auto}
+}
+@media(min-width:481px) and (max-width:700px){
+ #app>header{gap:8px}
+ #app>header .brand{gap:6px}
+ #app>header .brand strong{font-size:18px}
+ #app>header .arrival{padding:8px 12px}
+ #app>header .arrival img{display:none}
+ #app>header .nav-end{gap:4px}
+ #app>header .pill{padding:10px 14px;font-size:16px}
+ #app>header #diagnostics-open{padding:8px;font-size:13px}
+ #app .picker{gap:8px}
+ #app .tabs{flex:1.2}
+ #app .controls{gap:8px}
+ #app .transport{display:flex;justify-content:center;width:auto}
+ #app .transport .icon-button{width:48px;flex:none}
+ #app #play{min-width:110px;font-size:18px}
+}
+@media(min-width:481px) and (max-height:550px){
+ #app>header{height:52px}
+ #app .picker{height:40px}
+ #app .player{padding:12px 16px}
+ #app .now{margin-bottom:8px}
+ #app .hero-icon{width:44px;height:44px}
+ #app .now h1{font-size:24px}
+ #app .timeline{height:34px;margin-bottom:6px}
+ #app .controls{gap:6px}
+ #app .segment{gap:6px}
+ #app .segment input{height:8px}
+ #app .list-card h2 img{display:none}
+ #app .list-card h2{font-size:17px;margin-bottom:4px}
+ #app .row{padding:10px 4px;font-size:15px}
+}
+@media(min-width:481px){
+ #app>main{grid-template-columns:minmax(0,1fr)}
+ #app .picker,#app .tabs,#app .episodes,#app .player{min-width:0}
+ #app #play{width:auto;flex:none}
+ #app .controls{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
+}
+@media(min-width:481px) and (max-width:950px){
+ #app .controls{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ #app .transport{grid-column:1/-1;grid-row:2}
+}

@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#f7f8fa"><meta name="description" content="도착 시간에 맞춰 끝나는 차 안의 수업. 드라이브클래스 웹 시연.">
 <title>드라이브클래스</title>
 <link rel="icon" href="assets/icons/ic_launcher_foreground.png">
-<link rel="stylesheet" href="ds/pleos/tokens.css"><link rel="stylesheet" href="ds/pleos/components/bundle.css"><link rel="stylesheet" href="style.css?v=20261112-splitpane">
+<link rel="stylesheet" href="ds/pleos/tokens.css"><link rel="stylesheet" href="ds/pleos/components/bundle.css"><link rel="stylesheet" href="style.css?v=20261112-viewport2">
 </head>
 <body>
 <div id="app">
@@ -28,5 +28,5 @@
 <dialog id="resume"><h2>지난번 멈춘 곳부터 이어 들을까요?</h2><p id="resume-detail" class="muted"></p><p id="resume-countdown"></p><div class="actions"><button id="resume-start" class="primary">이어 듣기</button><button id="resume-new">새로 시작</button></div></dialog>
 <dialog id="diagnostics" class="wide"><div class="dialog-head"><h2>차량 브라우저 진단</h2><button class="plain close" data-close="diagnostics" aria-label="진단 닫기">✕</button></div><p>재생 후 지도 등 다른 화면으로 전환하고 돌아오세요. 아래 기록에서 재생 진행과 중단 여부를 확인할 수 있어요.</p><dl id="diagnostic-values"></dl><div class="actions"><button id="locate">위치·속도 확인 시작</button><button id="stop-locate">위치 확인 중지</button><button id="download-log">진단 기록 저장</button></div><p class="muted">위치는 이 기기에서만 확인하며 서버로 전송하지 않아요. 주행 상태는 자동 변경하지 않아요.</p><pre id="diagnostic-log"></pre></dialog>
 <section id="end-screen" hidden><header><button id="end-close" class="plain" aria-label="종료 화면 닫기">✕</button><strong>드라이브클래스</strong><span id="end-chip" class="pill">목적지 도착</span></header><main><section class="card end-hero"><img id="end-icon" src="assets/icons/icon3d_arrival.png" alt=""><div><h1 id="end-title">목적지에 도착했어요</h1><p id="end-description"></p></div></section><div class="columns"><section class="card"><h2>오늘 들은 블록</h2><div id="end-blocks"></div></section><section class="card"><h2>모은 표현</h2><div id="end-sentences"></div><button id="end-recap" class="primary">오늘의 정리 모두 보기</button></section></div><div class="actions bottom"><button id="end-resume">이어서 듣기</button><button id="end-restart">새 코스 시작</button><button id="end-review">복습 듣기</button><button id="end-next">다음 회차</button><button id="end-quiet">조용히 가기</button></div></main></section>
-<script type="module" src="app.js?v=20261112-splitpane"></script>
+<script type="module" src="app.js?v=20261112-viewport2"></script>
 </body></html>
