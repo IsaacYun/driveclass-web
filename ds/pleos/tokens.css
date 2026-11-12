@@ -1,0 +1,412 @@
+/* Pleos — generated from tokens.json */
+:root, [data-theme="light"] {
+  --basic_00: #ffffff; /* Grayscale scale step 00. 시맨틱 맥락이 없을 때 쓰는 기본 스케일 (다크 테마에서 반전). */
+  --basic_50: #f7f8fa; /* Grayscale scale step 50. 시맨틱 맥락이 없을 때 쓰는 기본 스케일 (다크 테마에서 반전). */
+  --basic_100: #edeef2; /* Grayscale scale step 100. 시맨틱 맥락이 없을 때 쓰는 기본 스케일 (다크 테마에서 반전). */
+  --basic_200: #e0e1e6; /* Grayscale scale step 200. 시맨틱 맥락이 없을 때 쓰는 기본 스케일 (다크 테마에서 반전). */
+  --basic_300: #c7c9ce; /* Grayscale scale step 300. 시맨틱 맥락이 없을 때 쓰는 기본 스케일 (다크 테마에서 반전). */
+  --basic_400: #a4a8ae; /* Grayscale scale step 400. 시맨틱 맥락이 없을 때 쓰는 기본 스케일 (다크 테마에서 반전). */
+  --basic_500: #686a72; /* Grayscale scale step 500. 시맨틱 맥락이 없을 때 쓰는 기본 스케일 (다크 테마에서 반전). */
+  --basic_600: #44464e; /* Grayscale scale step 600. 시맨틱 맥락이 없을 때 쓰는 기본 스케일 (다크 테마에서 반전). */
+  --basic_700: #313236; /* Grayscale scale step 700. 시맨틱 맥락이 없을 때 쓰는 기본 스케일 (다크 테마에서 반전). */
+  --basic_800: #1d1e21; /* Grayscale scale step 800. 시맨틱 맥락이 없을 때 쓰는 기본 스케일 (다크 테마에서 반전). */
+  --basic_900: #131417; /* Grayscale scale step 900. 시맨틱 맥락이 없을 때 쓰는 기본 스케일 (다크 테마에서 반전). */
+  --basic_alpha_dark_50: rgba(19, 20, 23, 0.05); /* 어두운 잉크 알파 5%: 라이트 #131417, 다크 #FFFFFF. 눌림·비활성 배경, dim에 사용. */
+  --basic_alpha_dark_100: rgba(19, 20, 23, 0.1); /* 어두운 잉크 알파 10%: 라이트 #131417, 다크 #FFFFFF. 눌림·비활성 배경, dim에 사용. */
+  --basic_alpha_dark_200: rgba(19, 20, 23, 0.2); /* 어두운 잉크 알파 20%: 라이트 #131417, 다크 #FFFFFF. 눌림·비활성 배경, dim에 사용. */
+  --basic_alpha_dark_300: rgba(19, 20, 23, 0.3); /* 어두운 잉크 알파 30%: 라이트 #131417, 다크 #FFFFFF. 눌림·비활성 배경, dim에 사용. */
+  --basic_alpha_dark_400: rgba(19, 20, 23, 0.4); /* 어두운 잉크 알파 40%: 라이트 #131417, 다크 #FFFFFF. 눌림·비활성 배경, dim에 사용. */
+  --basic_alpha_dark_500: rgba(19, 20, 23, 0.5); /* 어두운 잉크 알파 50%: 라이트 #131417, 다크 #FFFFFF. 눌림·비활성 배경, dim에 사용. */
+  --basic_alpha_light_50: rgba(255, 255, 255, 0.05); /* 밝은 알파 5%: 라이트 #FFFFFF, 다크 #131417. 어두운 바탕 위 요소, dim_light에 사용. */
+  --basic_alpha_light_100: rgba(255, 255, 255, 0.1); /* 밝은 알파 10%: 라이트 #FFFFFF, 다크 #131417. 어두운 바탕 위 요소, dim_light에 사용. */
+  --basic_alpha_light_200: rgba(255, 255, 255, 0.2); /* 밝은 알파 20%: 라이트 #FFFFFF, 다크 #131417. 어두운 바탕 위 요소, dim_light에 사용. */
+  --basic_alpha_light_300: rgba(255, 255, 255, 0.3); /* 밝은 알파 30%: 라이트 #FFFFFF, 다크 #131417. 어두운 바탕 위 요소, dim_light에 사용. */
+  --basic_alpha_light_400: rgba(255, 255, 255, 0.4); /* 밝은 알파 40%: 라이트 #FFFFFF, 다크 #131417. 어두운 바탕 위 요소, dim_light에 사용. */
+  --basic_alpha_light_500: rgba(255, 255, 255, 0.5); /* 밝은 알파 50%: 라이트 #FFFFFF, 다크 #131417. 어두운 바탕 위 요소, dim_light에 사용. */
+  --basic_static_light_100: #ffffff; /* Static white 100%. 테마와 무관하게 고정. Overlay·어두운 이미지 위 텍스트/아이콘. */
+  --basic_static_light_200: rgba(255, 255, 255, 0.84); /* Static white 84%. 테마와 무관하게 고정. Overlay·어두운 이미지 위 텍스트/아이콘. */
+  --basic_static_light_300: rgba(255, 255, 255, 0.64); /* Static white 64%. 테마와 무관하게 고정. Overlay·어두운 이미지 위 텍스트/아이콘. */
+  --basic_static_light_400: rgba(255, 255, 255, 0.32); /* Static white 32%. 테마와 무관하게 고정. Overlay·어두운 이미지 위 텍스트/아이콘. */
+  --basic_static_dark_100: #131417; /* Static ink 100%. 테마와 무관하게 고정. 밝은 이미지·Overlay 위 텍스트/아이콘. */
+  --basic_static_dark_200: rgba(19, 20, 23, 0.84); /* Static ink 84%. 테마와 무관하게 고정. 밝은 이미지·Overlay 위 텍스트/아이콘. */
+  --basic_static_dark_300: rgba(19, 20, 23, 0.64); /* Static ink 64%. 테마와 무관하게 고정. 밝은 이미지·Overlay 위 텍스트/아이콘. */
+  --basic_static_dark_400: rgba(19, 20, 23, 0.32); /* Static ink 32%. 테마와 무관하게 고정. 밝은 이미지·Overlay 위 텍스트/아이콘. */
+  --background_primary: var(--basic_50); /* 앱 화면의 기본 배경. Z축 최하단. */
+  --background_secondary: var(--basic_00); /* 보조 배경 영역. */
+  --background_popup: var(--basic_00); /* System Popup·패널 배경. */
+  --surface_basic: var(--basic_00); /* 카드·리스트 등 기본 서피스. */
+  --surface_low: var(--basic_50); /* 한 단계 낮은 서피스. */
+  --surface_high: var(--basic_100); /* 강조가 필요한 서피스. */
+  --surface_accent: var(--basic_200); /* 선택·하이라이트 서피스. */
+  --text_dark_primary: var(--basic_static_dark_100); /* 주 텍스트. surface_basic·background_primary 위. */
+  --text_dark_secondary: var(--basic_static_dark_200); /* 보조 텍스트 (84%). */
+  --text_dark_tertiary: var(--basic_static_dark_300); /* 3차 텍스트 (64%). 부가 정보·placeholder. */
+  --text_dark_quaternary: var(--basic_static_dark_400); /* 비활성 텍스트 (32%). 4.5:1 미달이므로 disabled 표현 전용. */
+  --text_light_primary: var(--basic_static_light_100); /* 반전 텍스트. button_filled·어두운 서피스 위. (원문 표기는 text_dark_* 중복, 반전 세트로 해석) */
+  --text_light_secondary: var(--basic_static_light_200); /* 반전 보조 텍스트 (84%). */
+  --text_light_tertiary: var(--basic_static_light_300); /* 반전 3차 텍스트 (64%). */
+  --text_light_quaternary: var(--basic_static_light_400); /* 반전 비활성 텍스트 (32%). disabled 전용. */
+  --icon_dark_primary: var(--basic_static_dark_100); /* 주 아이콘. */
+  --icon_dark_secondary: var(--basic_static_dark_200); /* 보조 아이콘. */
+  --icon_dark_tertiary: var(--basic_static_dark_300); /* 3차 아이콘. */
+  --icon_dark_quaternary: var(--basic_static_dark_400); /* 비활성 아이콘. */
+  --icon_light_primary: var(--basic_static_light_100); /* 반전 아이콘 (원문 표기 icon_dark_* 중복, 반전 세트로 해석). */
+  --icon_light_secondary: var(--basic_static_light_200); /* 반전 보조 아이콘. */
+  --icon_light_tertiary: var(--basic_static_light_300); /* 반전 3차 아이콘. */
+  --icon_light_quaternary: var(--basic_static_light_400); /* 반전 비활성 아이콘. */
+  --button_basic_enabled: var(--basic_alpha_dark_50); /* Basic(Primary) 버튼 배경. */
+  --button_basic_pressed: var(--basic_alpha_dark_100); /* Basic 버튼 눌림. */
+  --button_basic_disabled: var(--basic_alpha_light_200); /* Basic 버튼 비활성. */
+  --button_switch_enabled: var(--basic_00); /* Toggle 버튼 활성(on) 배경. 구 button-basic-active-enabled. */
+  --button_switch_pressed: var(--basic_alpha_light_500); /* Toggle 버튼 활성 눌림. */
+  --button_switch_disabled: var(--basic_alpha_light_300); /* Toggle 버튼 활성 비활성. */
+  --button_filled_enabled: var(--basic_600); /* Filled(Secondary) 버튼 배경. 텍스트는 text_light_primary. */
+  --button_filled_pressed: var(--basic_700); /* Filled 버튼 눌림. */
+  --button_filled_disabled: var(--basic_alpha_dark_50); /* Filled 버튼 비활성. */
+  --controller_slider_normal: var(--basic_alpha_dark_200); /* 슬라이더 트랙. */
+  --controller_slider_pressed: var(--basic_alpha_dark_300); /* 슬라이더 드래그 중 트랙. */
+  --controller_slider_knob: var(--basic_00); /* 슬라이더 핸들/채움. */
+  --controller_tab_background: var(--basic_alpha_dark_50); /* Tabs(Box) 컨테이너 배경. */
+  --controller_stepper_background: var(--basic_00); /* Stepper 배경. */
+  --climate_button_enabled: var(--basic_200); /* 공조 버튼 기본. */
+  --climate_button_selected: var(--basic_00); /* 공조 버튼 선택. */
+  --climate_button_border_enabled: var(--basic_alpha_dark_200); /* 공조 버튼 테두리. */
+  --climate_button_border_disabled: var(--basic_alpha_dark_50); /* 공조 버튼 비활성 테두리. */
+  --climate_toggle_selected: var(--basic_alpha_dark_100); /* 공조 토글 선택. */
+  --climate_toggle_pressed: var(--basic_alpha_dark_200); /* 공조 토글 눌림. */
+  --climate_slider_background: var(--basic_00); /* 공조 슬라이더 배경. */
+  --climate_airvent_button_opened: var(--basic_00); /* 송풍구 버튼 열림. */
+  --climate_airvent_button_closed: var(--basic_alpha_light_400); /* 송풍구 버튼 닫힘. */
+  --climate_airvent_symbol_opened: var(--basic_static_dark_200); /* 송풍구 심볼 열림. */
+  --climate_airvent_symbol_closed: var(--basic_static_dark_400); /* 송풍구 심볼 닫힘. */
+  --climate_airvent_opened: var(--basic_static_light_300); /* 송풍구 열림. */
+  --climate_airvent_closed: var(--basic_alpha_light_200); /* 송풍구 닫힘. */
+  --dropdown_normal: var(--basic_00); /* Dropdown 기본 배경. */
+  --dropdown_pressed: var(--basic_100); /* Dropdown 눌림. */
+  --dim_dark_primary: var(--basic_alpha_dark_50); /* 약한 dim. */
+  --dim_dark_secondary: var(--basic_alpha_dark_100); /* 중간 dim. */
+  --dim_dark_tertiary: var(--basic_alpha_dark_200); /* 강한 dim. */
+  --dim_light_primary: var(--basic_alpha_light_500); /* 밝은 dim 50%. */
+  --dim_light_secondary: var(--basic_alpha_light_400); /* 밝은 dim 40%. */
+  --dim_light_tertiary: var(--basic_alpha_light_300); /* 밝은 dim 30%. */
+  --overlay_default: var(--basic_alpha_dark_200); /* 팝업 뒤 화면을 덮는 오버레이. */
+  --field_background: var(--basic_00); /* Text/Number Field 배경. */
+  --field_focused: var(--basic_700); /* Field 포커스 테두리·커서. */
+  --informative_active: #02c265; /* 활성·켜짐 상태 (Switch on 등). 단독 텍스트로 쓰지 않음. */
+  --informative_positive: #0064ff; /* 긍정·링크·진행 상태. */
+  --informative_negative: #fe3d16; /* 오류·경고·Invalid 상태. */
+  --informative_autonomous_driving: #5a46fa; /* 자율주행 상태 표시 전용. 가이드 문서의 대표 퍼플. */
+  --switch_off: var(--basic_alpha_dark_300); /* Switch 꺼짐 트랙. */
+  --switch_disabled: var(--basic_alpha_dark_100); /* Switch 비활성 트랙. */
+  --switch_knob_on: var(--basic_00); /* Switch 켜짐 핸들. */
+  --switch_knob_off: var(--basic_00); /* Switch 꺼짐 핸들. */
+  --switch_knob_disabled: var(--basic_00); /* Switch 비활성 핸들. */
+  --gleo_surface_primary: var(--basic_00); /* Gleo AI 패널 서피스. 구 ambient_ai_surface_primary. */
+  --gleo_surface_secondary: var(--basic_alpha_dark_50); /* Gleo AI 보조 서피스. */
+  --gleo_bubble_primary: #9ba8e2; /* Gleo AI 말풍선 1차. */
+  --gleo_bubble_secondary: #8896d3; /* Gleo AI 말풍선 2차. */
+  --gleo_bubble_tertiary: var(--basic_00); /* Gleo AI 말풍선 3차. */
+  --gleo_bubble_speaker: #3f4b81; /* Gleo AI 화자 말풍선. */
+  --driving_gearshift_background: var(--basic_900); /* Driving view 기어 배경 (원문 gearshitft_background). */
+  --driving_charging_normal: #00db25; /* 충전 중 표시. */
+  --driving_charging_deep: #00b975; /* 급속 충전 표시. 다크 값이 파랑으로 표기됨 (원문 그대로). */
+  --driving_gradient_start: rgba(255, 255, 255, 0); /* Driving view 그라디언트 시작 (투명). */
+  --driving_gradient_end: var(--basic_00); /* Driving view 그라디언트 끝. */
+  --media_radio_primary: #c911e7; /* 라디오 대표색. */
+  --media_music_primary: #4781ff; /* 음악 대표색. */
+  --media_radio_gradient_start: rgba(255, 255, 255, 0); /* 라디오 배경 그라디언트 시작. */
+  --media_radio_gradient_end: #ffffff; /* 라디오 배경 그라디언트 끝. */
+  --phone_call_normal: #32b957; /* 통화 버튼. */
+  --phone_call_pressed: #279e47; /* 통화 버튼 눌림. */
+  --phone_end_normal: #fe3d16; /* 종료 버튼. */
+  --phone_end_pressed: #e73612; /* 종료 버튼 눌림. */
+  --regulation_blue: #0064ff; /* 법규 텔테일 파랑. */
+  --regulation_green: #00ba13; /* 법규 텔테일 초록. */
+  --regulation_yellow: #ffc224; /* 법규 텔테일 노랑. */
+  --regulation_orange: #ff8a00; /* 법규 텔테일 주황. */
+  --regulation_red: #f62e24; /* 법규 텔테일 빨강. */
+  --regulation_bluetooth: #0082fc; /* 블루투스 표시. */
+  --keyboard_normal_primary_normal: var(--basic_00); /* 시스템 키보드(normal) primary normal. */
+  --keyboard_normal_primary_pressed: var(--basic_100); /* 시스템 키보드(normal) primary pressed. */
+  --keyboard_normal_secondary_normal: var(--basic_300); /* 시스템 키보드(normal) secondary normal. */
+  --keyboard_normal_secondary_pressed: var(--basic_400); /* 시스템 키보드(normal) secondary pressed. */
+  --keyboard_normal_active_normal: var(--basic_600); /* 시스템 키보드(normal) active normal. */
+  --keyboard_normal_active_pressed: var(--basic_700); /* 시스템 키보드(normal) active pressed. */
+  --keyboard_normal_accents_normal: var(--basic_600); /* 시스템 키보드(normal) accents normal. */
+  --keyboard_normal_accents_pressed: var(--basic_700); /* 시스템 키보드(normal) accents pressed. */
+  --keyboard_normal_background: var(--basic_200); /* 시스템 키보드(normal) background. */
+  --keyboard_static_primary_normal: var(--basic_500); /* 시스템 키보드(static) primary normal. */
+  --keyboard_static_primary_pressed: var(--basic_600); /* 시스템 키보드(static) primary pressed. */
+  --keyboard_static_secondary_normal: var(--basic_600); /* 시스템 키보드(static) secondary normal. */
+  --keyboard_static_secondary_pressed: var(--basic_500); /* 시스템 키보드(static) secondary pressed. */
+  --keyboard_static_active_normal: var(--basic_500); /* 시스템 키보드(static) active normal. */
+  --keyboard_static_active_pressed: var(--basic_700); /* 시스템 키보드(static) active pressed. */
+  --keyboard_static_accents_normal: var(--basic_300); /* 시스템 키보드(static) accents normal. */
+  --keyboard_static_accents_pressed: var(--basic_400); /* 시스템 키보드(static) accents pressed. */
+  --keyboard_static_background: var(--basic_900); /* 시스템 키보드(static) background. */
+  --keyboard_static_icon_light: var(--basic_00); /* 시스템 키보드(static) icon light. */
+  --keyboard_static_icon_dark: var(--basic_900); /* 시스템 키보드(static) icon dark. */
+  --keyboard_static_icon_disabled: var(--basic_alpha_light_100); /* 시스템 키보드(static) icon disabled. */
+  --keyboard_static_text: var(--basic_700); /* 시스템 키보드(static) text. */
+  --shadow_level_1: 0 6px 24px 0 rgba(0, 0, 0, 0.08); /* 가장 낮은 elevation: 카드, Floating 버튼. */
+  --shadow_level_2: 0 8px 32px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.08); /* Dropdown 컨테이너, Toast. */
+  --shadow_level_3: 0 20px 40px 0 rgba(0, 0, 0, 0.24), 0 2px 4px 0 rgba(0, 0, 0, 0.2); /* System Popup, Notification 등 최상위. */
+}
+[data-theme="dark"] {
+  --basic_00: #131417;
+  --basic_50: #1d1e21;
+  --basic_100: #313236;
+  --basic_200: #44464e;
+  --basic_300: #686a72;
+  --basic_400: #a4a8ae;
+  --basic_500: #c7c9ce;
+  --basic_600: #e0e1e6;
+  --basic_700: #edeef2;
+  --basic_800: #f7f8fa;
+  --basic_900: #ffffff;
+  --basic_alpha_dark_50: rgba(255, 255, 255, 0.05);
+  --basic_alpha_dark_100: rgba(255, 255, 255, 0.1);
+  --basic_alpha_dark_200: rgba(255, 255, 255, 0.2);
+  --basic_alpha_dark_300: rgba(255, 255, 255, 0.3);
+  --basic_alpha_dark_400: rgba(255, 255, 255, 0.4);
+  --basic_alpha_dark_500: rgba(255, 255, 255, 0.5);
+  --basic_alpha_light_50: rgba(19, 20, 23, 0.05);
+  --basic_alpha_light_100: rgba(19, 20, 23, 0.1);
+  --basic_alpha_light_200: rgba(19, 20, 23, 0.2);
+  --basic_alpha_light_300: rgba(19, 20, 23, 0.3);
+  --basic_alpha_light_400: rgba(19, 20, 23, 0.4);
+  --basic_alpha_light_500: rgba(19, 20, 23, 0.5);
+  --basic_static_light_100: #ffffff;
+  --basic_static_light_200: rgba(255, 255, 255, 0.84);
+  --basic_static_light_300: rgba(255, 255, 255, 0.64);
+  --basic_static_light_400: rgba(255, 255, 255, 0.32);
+  --basic_static_dark_100: #131417;
+  --basic_static_dark_200: rgba(19, 20, 23, 0.84);
+  --basic_static_dark_300: rgba(19, 20, 23, 0.64);
+  --basic_static_dark_400: rgba(19, 20, 23, 0.32);
+  --background_primary: var(--basic_50);
+  --background_secondary: var(--basic_00);
+  --background_popup: var(--basic_100);
+  --surface_basic: var(--basic_50);
+  --surface_low: var(--basic_00);
+  --surface_high: var(--basic_100);
+  --surface_accent: var(--basic_200);
+  --text_dark_primary: var(--basic_static_light_100);
+  --text_dark_secondary: var(--basic_static_light_200);
+  --text_dark_tertiary: var(--basic_static_light_300);
+  --text_dark_quaternary: var(--basic_static_light_400);
+  --text_light_primary: var(--basic_static_dark_100);
+  --text_light_secondary: var(--basic_static_dark_200);
+  --text_light_tertiary: var(--basic_static_dark_300);
+  --text_light_quaternary: var(--basic_static_dark_400);
+  --icon_dark_primary: var(--basic_static_light_100);
+  --icon_dark_secondary: var(--basic_static_light_200);
+  --icon_dark_tertiary: var(--basic_static_light_300);
+  --icon_dark_quaternary: var(--basic_static_light_400);
+  --icon_light_primary: var(--basic_static_dark_100);
+  --icon_light_secondary: var(--basic_static_dark_200);
+  --icon_light_tertiary: var(--basic_static_dark_300);
+  --icon_light_quaternary: var(--basic_static_dark_400);
+  --button_basic_enabled: var(--basic_alpha_dark_50);
+  --button_basic_pressed: var(--basic_alpha_dark_100);
+  --button_basic_disabled: var(--basic_alpha_light_200);
+  --button_switch_enabled: var(--basic_alpha_dark_200);
+  --button_switch_pressed: var(--basic_alpha_dark_200);
+  --button_switch_disabled: var(--basic_alpha_dark_300);
+  --button_filled_enabled: var(--basic_600);
+  --button_filled_pressed: var(--basic_500);
+  --button_filled_disabled: var(--basic_alpha_dark_50);
+  --controller_slider_normal: var(--basic_alpha_dark_100);
+  --controller_slider_pressed: var(--basic_alpha_dark_200);
+  --controller_slider_knob: var(--basic_alpha_dark_300);
+  --controller_tab_background: var(--basic_alpha_dark_50);
+  --controller_stepper_background: var(--basic_alpha_light_100);
+  --climate_button_enabled: var(--basic_50);
+  --climate_button_selected: var(--basic_200);
+  --climate_button_border_enabled: var(--basic_alpha_dark_100);
+  --climate_button_border_disabled: var(--basic_alpha_dark_50);
+  --climate_toggle_selected: var(--basic_alpha_light_300);
+  --climate_toggle_pressed: var(--basic_alpha_light_400);
+  --climate_slider_background: var(--basic_100);
+  --climate_airvent_button_opened: var(--basic_600);
+  --climate_airvent_button_closed: var(--basic_alpha_dark_200);
+  --climate_airvent_symbol_opened: var(--basic_static_dark_200);
+  --climate_airvent_symbol_closed: var(--basic_static_dark_300);
+  --climate_airvent_opened: var(--basic_static_light_400);
+  --climate_airvent_closed: var(--basic_alpha_dark_100);
+  --dropdown_normal: var(--basic_alpha_dark_100);
+  --dropdown_pressed: var(--basic_alpha_dark_300);
+  --dim_dark_primary: var(--basic_alpha_dark_50);
+  --dim_dark_secondary: var(--basic_alpha_dark_100);
+  --dim_dark_tertiary: var(--basic_alpha_dark_200);
+  --dim_light_primary: var(--basic_alpha_light_500);
+  --dim_light_secondary: var(--basic_alpha_light_400);
+  --dim_light_tertiary: var(--basic_alpha_light_300);
+  --overlay_default: var(--basic_alpha_light_500);
+  --field_background: var(--basic_00);
+  --field_focused: var(--basic_700);
+  --informative_active: #00e074;
+  --informative_positive: #0082ff;
+  --informative_negative: #ff4c28;
+  --informative_autonomous_driving: #6a57ff;
+  --switch_off: var(--basic_alpha_dark_100);
+  --switch_disabled: var(--basic_alpha_dark_100);
+  --switch_knob_on: var(--basic_900);
+  --switch_knob_off: var(--basic_400);
+  --switch_knob_disabled: var(--basic_alpha_dark_200);
+  --gleo_surface_primary: var(--basic_200);
+  --gleo_surface_secondary: var(--basic_alpha_light_200);
+  --gleo_bubble_primary: #545f93;
+  --gleo_bubble_secondary: #3e4976;
+  --gleo_bubble_tertiary: var(--basic_100);
+  --gleo_bubble_speaker: #b6c1f3;
+  --driving_gearshift_background: var(--basic_100);
+  --driving_charging_normal: #00db25;
+  --driving_charging_deep: #0082fc;
+  --driving_gradient_start: rgba(19, 20, 23, 0);
+  --driving_gradient_end: var(--basic_00);
+  --media_radio_primary: #c911e7;
+  --media_music_primary: #4781ff;
+  --media_radio_gradient_start: rgba(29, 30, 33, 0);
+  --media_radio_gradient_end: #1d1e21;
+  --phone_call_normal: #3bd665;
+  --phone_call_pressed: #2db752;
+  --phone_end_normal: #ff4c28;
+  --phone_end_pressed: #df4323;
+  --regulation_blue: #0082ff;
+  --regulation_green: #55f165;
+  --regulation_yellow: #ffc224;
+  --regulation_orange: #ff8a00;
+  --regulation_red: #ff4339;
+  --regulation_bluetooth: #0082fc;
+  --keyboard_normal_primary_normal: var(--basic_300);
+  --keyboard_normal_primary_pressed: var(--basic_200);
+  --keyboard_normal_secondary_normal: var(--basic_200);
+  --keyboard_normal_secondary_pressed: var(--basic_200);
+  --keyboard_normal_active_normal: var(--basic_300);
+  --keyboard_normal_active_pressed: var(--basic_200);
+  --keyboard_normal_accents_normal: var(--basic_500);
+  --keyboard_normal_accents_pressed: var(--basic_400);
+  --keyboard_normal_background: var(--basic_100);
+  --keyboard_static_primary_normal: var(--basic_300);
+  --keyboard_static_primary_pressed: var(--basic_200);
+  --keyboard_static_secondary_normal: var(--basic_200);
+  --keyboard_static_secondary_pressed: var(--basic_200);
+  --keyboard_static_active_normal: var(--basic_300);
+  --keyboard_static_active_pressed: var(--basic_200);
+  --keyboard_static_accents_normal: var(--basic_500);
+  --keyboard_static_accents_pressed: var(--basic_400);
+  --keyboard_static_background: var(--basic_100);
+  --keyboard_static_icon_light: var(--basic_400);
+  --keyboard_static_icon_dark: var(--basic_400);
+  --keyboard_static_icon_disabled: var(--basic_alpha_dark_100);
+  --keyboard_static_text: var(--basic_400);
+}
+:root {
+  --space_24: 24px; /* Toast·Toast Popup의 side/bottom 패딩, 팝업 버튼 사이 간격. */
+  --space_40: 40px; /* Status bar SP0과 SP1 사이 safe bounds (right padding). */
+  --space_48: 48px; /* System Popup 내부 패딩 (가이드 일러스트 실측). 아이콘 기본 그리드 48×48dp. */
+  --toast_max_width: 792px; /* Toast 전체 최대 너비. 메시지 텍스트는 712px까지. */
+  --radius_8: 8px; /* Switch 핸들 (일러스트 실측). */
+  --radius_16: 16px; /* Switch 트랙, Checkbox·작은 컨트롤 (일러스트 실측). */
+  --radius_24: 24px; /* Medium 버튼(높이 80) (일러스트 실측). */
+  --radius_32: 32px; /* Large 버튼(높이 100), 팝업 액션 버튼 (일러스트 실측). */
+  --radius_48: 48px; /* System Popup 컨테이너 (일러스트 실측). */
+  --radius_full: 9999px; /* Toast·알약형 태그. */
+  --button_height_large: 100px; /* Large Basic 버튼·팝업 액션 버튼 높이 (일러스트 실측). */
+  --button_height_medium: 80px; /* Medium Basic 버튼 높이 (일러스트 실측). */
+  --icon_size: 48px; /* 아이콘 기본 그리드 48×48dp. */
+  --touch_min_text: 18px; /* 가독성 확보를 위한 실제 픽셀 최소 글자 높이. */
+  --response_max: 250ms; /* 입력 후 시스템 응답 최대 시간. 넘으면 로딩 상태를 보여준다. */
+  --osd_dismiss: 2000ms; /* OSD 패널 자동 사라짐. */
+  --pressed_scale: 100; /* 모든 터치 요소 Pressed 시 shrink 95% + 모드별 배경색. */
+  --font-sans: "Asta Sans", "Pretendard", "Apple SD Gothic Neo", system-ui, sans-serif;
+  --text-headline_large: 700 60px/1.25 var(--font-sans); /* 60px. 허용 굵기: Extra Bold(800)·Bold(700). 줄높이는 가이드 미기재로 1.25 가정. */
+  --text-headline_medium: 700 56px/1.25 var(--font-sans); /* 56px. 허용 굵기: Extra Bold·Bold. 줄높이는 가이드 미기재로 1.25 가정. */
+  --text-headline_small: 700 48px/1.25 var(--font-sans); /* 48px. 허용 굵기: Extra Bold·Bold. 줄높이는 가이드 미기재로 1.25 가정. */
+  --text-title_large: 700 40px/1.3 var(--font-sans); /* 40px. 허용 굵기: Extra Bold·Bold·Regular. 줄높이는 가이드 미기재로 1.3 가정. */
+  --text-title_medium: 700 36px/1.3 var(--font-sans); /* 36px. 허용 굵기: Extra Bold·Bold·Regular. 줄높이는 가이드 미기재로 1.3 가정. */
+  --text-title_small: 700 32px/1.3 var(--font-sans); /* 32px. 허용 굵기: Extra Bold·Bold·Regular. 줄높이는 가이드 미기재로 1.3 가정. */
+  --text-body_large: 400 30px/1.5 var(--font-sans); /* 30px. 허용 굵기: Strong(700)·Normal(400). 줄높이는 가이드 미기재로 1.5 가정. */
+  --text-body_medium: 400 28px/1.5 var(--font-sans); /* 28px. 허용 굵기: Strong·Normal. 줄높이는 가이드 미기재로 1.5 가정. */
+  --text-body_small: 400 26px/1.5 var(--font-sans); /* 26px. 허용 굵기: Strong·Normal. 줄높이는 가이드 미기재로 1.5 가정. */
+  --text-label_medium: 400 24px/1.5 var(--font-sans); /* 24px. 허용 굵기: Normal. 줄높이는 가이드 미기재로 1.5 가정. */
+  --text-label_small: 400 20px/1.5 var(--font-sans); /* 20px. 허용 굵기: Normal. 줄높이는 가이드 미기재로 1.5 가정. */
+}
+.headline_large {
+  font-family: var(--font-sans);
+  font-size: 60px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.headline_medium {
+  font-family: var(--font-sans);
+  font-size: 56px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.headline_small {
+  font-family: var(--font-sans);
+  font-size: 48px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.title_large {
+  font-family: var(--font-sans);
+  font-size: 40px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.title_medium {
+  font-family: var(--font-sans);
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.title_small {
+  font-family: var(--font-sans);
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.body_large {
+  font-family: var(--font-sans);
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body_medium {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body_small {
+  font-family: var(--font-sans);
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.label_medium {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.label_small {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}

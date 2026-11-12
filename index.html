@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f8fa"><meta name="description" content="도착 시간에 맞춰 끝나는 차 안의 수업. 드라이브클래스 웹 시연.">
+<title>드라이브클래스</title>
+<link rel="icon" href="assets/icons/ic_launcher_foreground.png">
+<link rel="stylesheet" href="ds/pleos/tokens.css"><link rel="stylesheet" href="ds/pleos/components/bundle.css"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<header><div class="brand"><img src="assets/icons/ic_launcher_foreground.png" alt=""><strong>드라이브클래스</strong></div><div class="nav-end"><button id="diagnostics-open" class="plain small">진단</button><button id="demo-open" class="pill">DEMO</button><div class="arrival"><img src="assets/icons/icon3d_arrival.png" alt=""><strong id="eta-label">도착까지 12분</strong></div></div></header>
+<main>
+<div class="picker"><div id="subjects" class="tabs" role="tablist" aria-label="과목"></div><div id="episodes" class="episodes" role="tablist" aria-label="회차"></div></div>
+<section class="card player" aria-label="오디오 재생">
+<div class="now"><img class="hero-icon" src="assets/icons/icon3d_headphones.png" alt=""><h1 id="block-title">회의 시작하기</h1></div>
+<div id="timeline" class="timeline" aria-label="코스 진행"></div>
+<div class="controls"><span id="position">0:00 / 2:31</span><div class="transport"><button id="previous" aria-label="이전 블록" class="icon-button"><svg viewBox="0 0 24 24"><path d="M5 5v14M19 5L8 12l11 7z"/></svg></button><button id="rewind" aria-label="15초 뒤로" class="icon-button skip">↶<small>15</small></button><button id="play" class="primary">▶ 재생</button><button id="forward" aria-label="30초 앞으로" class="icon-button skip">↷<small>30</small></button><button id="next" aria-label="다음 블록" class="icon-button"><svg viewBox="0 0 24 24"><path d="M19 5v14M5 5l11 7-11 7z"/></svg></button></div><span id="finish-label">도착 1분 전에 끝나요</span></div>
+</section>
+<div class="columns"><section class="card list-card"><h2><img src="assets/icons/icon3d_speech.png" alt="">오늘의 블록</h2><p id="change-note" class="muted" role="status"></p><div id="block-list" class="scroll-list"></div></section><section id="summary-card" class="card list-card"><h2><img id="summary-icon" src="assets/icons/icon3d_notebook.png" alt="">오늘의 정리<button id="recap-open" class="plain small">모두 보기 ›</button></h2><div id="summary-list" class="scroll-list"></div></section></div>
+<p class="browser-note">웹 시연 · 도착 시간과 주행 상태는 DEMO에서 입력해요.</p>
+</main>
+</div>
+<audio id="audio" preload="metadata" playsinline></audio><audio id="sentence-audio" preload="none" playsinline></audio>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="demo"><div class="dialog-head"><h2>데모 설정</h2><button class="plain close" data-close="demo" aria-label="데모 설정 닫기">✕</button></div><p class="muted">웹에서는 도착 시간과 주행 상태를 직접 넣어요.</p><label class="setting">주행 중<input id="driving" type="checkbox" role="switch"></label><label class="setting" for="remaining">남은 주행 시간 <strong id="remaining-label">12분</strong></label><input id="remaining" type="range" min="2" max="120" value="12" aria-label="남은 주행 시간"><div class="actions"><button id="apply-eta">시간 적용</button><button id="jam">정체 +8분</button><button id="destination">목적지 → 6분</button></div><h3>주행 끝내 보기</h3><div class="actions"><button id="arrive">목적지 도착</button><button id="park">중간에 주차</button></div><div class="actions bottom"><button id="restart">처음부터</button><button class="primary" data-close="demo">닫기</button></div></dialog>
+<dialog id="recap" class="wide"><div class="dialog-head"><h2>오늘의 정리</h2><button class="plain close" data-close="recap" aria-label="오늘의 정리 닫기">✕</button></div><p class="muted">들은 구간에서 모은 표현이에요. ▶를 누르면 원문 다음 뜻을 들려드려요.</p><div id="recap-list"></div></dialog>
+<dialog id="resume"><h2>지난번 멈춘 곳부터 이어 들을까요?</h2><p id="resume-detail" class="muted"></p><p id="resume-countdown"></p><div class="actions"><button id="resume-start" class="primary">이어 듣기</button><button id="resume-new">새로 시작</button></div></dialog>
+<dialog id="diagnostics" class="wide"><div class="dialog-head"><h2>차량 브라우저 진단</h2><button class="plain close" data-close="diagnostics" aria-label="진단 닫기">✕</button></div><p>재생 후 지도 등 다른 화면으로 전환하고 돌아오세요. 아래 기록에서 재생 진행과 중단 여부를 확인할 수 있어요.</p><dl id="diagnostic-values"></dl><div class="actions"><button id="locate">위치·속도 확인 시작</button><button id="stop-locate">위치 확인 중지</button><button id="download-log">진단 기록 저장</button></div><p class="muted">위치는 이 기기에서만 확인하며 서버로 전송하지 않아요. 주행 상태는 자동 변경하지 않아요.</p><pre id="diagnostic-log"></pre></dialog>
+<section id="end-screen" hidden><header><button id="end-close" class="plain" aria-label="종료 화면 닫기">✕</button><strong>드라이브클래스</strong><span id="end-chip" class="pill">목적지 도착</span></header><main><section class="card end-hero"><img id="end-icon" src="assets/icons/icon3d_arrival.png" alt=""><div><h1 id="end-title">목적지에 도착했어요</h1><p id="end-description"></p></div></section><div class="columns"><section class="card"><h2>오늘 들은 블록</h2><div id="end-blocks"></div></section><section class="card"><h2>모은 표현</h2><div id="end-sentences"></div><button id="end-recap" class="primary">오늘의 정리 모두 보기</button></section></div><div class="actions bottom"><button id="end-resume">이어서 듣기</button><button id="end-restart">새 코스 시작</button><button id="end-review">복습 듣기</button><button id="end-next">다음 회차</button><button id="end-quiet">조용히 가기</button></div></main></section>
+<script type="module" src="app.js"></script>
+</body></html>
