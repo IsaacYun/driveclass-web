@@ -66,3 +66,6 @@
 #driving:checked{background:var(--informative_positive)}
 #driving:checked:before{transform:translateX(26px)}
 dialog p,.row .detail{word-break:keep-all;overflow-wrap:anywhere}
+/* Keep the dismiss action reachable in long recap/diagnostic dialogs. */
+dialog .dialog-head{position:sticky;top:-32px;z-index:1;background:var(--background_popup);padding-top:12px;padding-bottom:12px;margin-top:-12px}
+@media(max-width:600px){dialog .dialog-head{top:-24px}}
